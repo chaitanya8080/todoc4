@@ -22,7 +22,7 @@ const register = async (req,res)=>{
        return res.status(200).send(user,token);
 
     } catch (error) {
-        res.status(400).send({message:"email already exist"});
+       return res.status(400).send({message:"email already exist"});
     }
 }
 const login = async (req,res)=>{
@@ -41,7 +41,7 @@ const login = async (req,res)=>{
         return res.status(200).send(user,token);
 
     } catch (error) {
-        res.status(400).send({message:"email already exist"});
+       return res.status(400).send({message:"email already exist"});
     }
 }
 
